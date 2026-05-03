@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+ <div class="scene blue" id="scene-start">
+            <div class="controller">
+            <div class="ashki"><h1>КВЕСТ ХОРРОР ПРО ЗАБРОШЕННУЮ БОЛЬНИЦУ</h1></div>
+                <a class="button" href="#scene-history">Прочитать историю квеста</a>
+                <a class="button" href="#scene-1">Локация</a>
+                <a class="button" href="#scene-final">Заказать билет сразу</a>                    
+            </div>
+</div>
+ <div class="scene blue" id="scene-history">
+            <div class="controller">
+                <div class="ashki"><h1>ИСТОРИЯ</h1></div>
+                <h2>
+                    История квеста "Заброшенная больница"
+Когда-то эта больница была центром надежды и исцеления, местом, где каждый пациент мог найти помощь и заботу. Но случилось что-то жуткое — за годы забвения здание превратилось в зловещее место, таящее в себе тайны прошлого.
+
+Легенды рассказывают, что в один дождливый вечер сюда вошли смельчаки-исследователи, решившие разгадать загадки заброшенной больницы. Но некоторые из них так и не вышли наружу... Оставив за собой лишь шепот ветра и ужасные истории, хранители которых — тени прошлого.
+
+Теперь ты — один из тех, кто осмелился войти. Тебе придется раскрыть тайну, скрытую в глубинах этого мрачного здания. Обнаружить улики, разгадать головоломки и, возможно, найти путь из этой кошмарной ловушки.
+
+Но будь осторожен — больница жива, и её жуткая тайна все еще хранится в темных коридорах. Готов ли ты столкнуться с этим ужасом и выбраться на свободу?
+                </h2>
+                <a class="button" href="#scene-start">Обратно</a>                  
+        </div>
+</div>                    
+        <div class="scene blue" id="scene-1">
+            <div class="controller">
+                <div class="ab"><img src="https://api.deepai.org/job-view-file/0c6e2dc0-cebd-45e2-813c-7817c25da82a/outputs/output.jpg"> </div>
+                <div class="ashki"><h1>Первая комната</h1></div>
+                <div class="ashki"><h2>Тусклый холл, где когда-то встречали пациентов, теперь погружён в гнетущую тишину. На стойке остались старые карты, а за дверями слышится отдалённый шорох.</h2>  </div>              
+                <a class="button" href="#scene-start">Назад</a>
+                <a class="button" href="#scene-man">Дальше</a>             
+            </div>
+        </div>
+        <div class="scene blue" id="scene-man">
+            <div class="controller"><div class="ab"><img src="https://api.deepai.org/job-view-file/951ad65c-2438-4f25-b021-8aeb05896521/outputs/output.jpg"> </div>
+                <div class="ashki"><h1>Вторая комната</h1></div>
+                <div class="ashki"><h2>Койки с перекошенными матрасами и ржавыми капельницами скрипят при каждом движении. На стене — странные надписи от тех, кто искал выход до тебя. </h2></div>
+                <a class="button" href="#scene-1">Назад</a>                 
+                <a class="button" href="#scene-woman">Дальше</a>
+                <a class="button" href="#scene-start">В начало</a>
+            </div>
+        </div>        
+        <div class="scene blue" id="scene-woman">
+            <div class="controller">
+                <div class="ab"><img src="https://api.deepai.org/job-view-file/439f9f3c-027a-442a-ba71-9cb7bb82ba0c/outputs/output.jpg"> </div>
+                <div class="ashki"><h1>Третья комната</h1></div>
+                <div class="ashki"><h2>Засохшая кровь на инструментах и леденящий ветер из разбитого окна. Здесь, кажется, всё ещё ощущается присутствие чего-то незримого.</h2 </div>                
+                <a class="button" href="#scene-man">Назад</a>
+                <a class="button" href="#scene-shadow">Дальше</a>
+                <a class="button" href="#scene-start">В начало</a>
+            </div>
+        </div>
+        <div class="scene blue" id="scene-shadow">                      
+            <div class="controller">
+                <div class="ab"><img src="https://api.deepai.org/job-view-file/84b6a9ad-a94e-420c-b93c-7ad87bc5c80b/outputs/output.jpg"> </div>
+                <div class="ashki"><h1>Третья комната</h1></div>
+                <div class="ashki"><h2>Полки с пыльными делами и запертые шкафы хранят забытую тайну. Нужно найти улики, чтобы открыть последнюю дверь — и, возможно, спастись.</h2></div>                 
+                <a class="button" href="#scene-start">В начало</a>
+                <a class="button" href="#scene-final">Заказать билет</a>
+            </div>
+        </div>                   
+        <div class="scene blue" id="scene-final">
+            <div class="controller">
+              <div class="ashki"> <h1>Закзать комнату</h1></div>
+                <a class="button" href="#scene-start">Назад</a>
+                <input type="Ваш номер" placeholder="Ваш номер">
+                <input type="Ваше имя" placeholder="Ваше имя">                
+                <a class="button" href="#scene-room">Заказать!</a>
+            </div>
+        </div>
+        <div class="scene blue" id="scene-room">
+            <div class="controller">
+               <div class="ashki"><h1>Комната успешно заказана,скоро мы с вам свяжемся</h1></div>                 
+                <a class="button" href="#scene-start">В начало</a>
+            </div>
+        </div>                            
+    </body>
+</html>
